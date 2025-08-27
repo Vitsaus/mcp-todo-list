@@ -21,15 +21,15 @@ The MCP endpoint is POST /mcp/create and expects { prompt } in the body.
 # Usage:
 In localhost:3000 you can control tasks with chat prompts.
 
-Create task hello world
-List tasks 1,2
-Set task 1 as done
+- Create task hello world
+- List tasks 1,2
+- Set task 1 as done
 
 In Visual Studio Code chat/ai window you can call:
 
-#mcp list tasks
-#mcp create task hello world
-#mcp set task 1 as done
+- \#mcp list tasks
+- \#mcp create task hello world
+- \#mcp set task 1 as done
 
 and so on...
 
