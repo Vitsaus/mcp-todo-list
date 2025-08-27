@@ -1,6 +1,8 @@
 # MCP Todo
 
-This workspace contains a simple todo app with:
+My first attempt to understand and learn how MCP servers/AI querying works.
+
+This workspace contains a simple mcp todo app with:
 
 - backend: NestJS server with in-memory tasks and an MCP controller that forwards prompts to OpenAI and creates tasks
 - frontend: Vite + React UI
