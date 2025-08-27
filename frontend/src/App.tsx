@@ -70,7 +70,7 @@ export default function App() {
         <input
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
-          placeholder="Type an instruction for the todo list (e.g. 'Create 3 tasks to organize my desk')"
+          placeholder="Type an instruction for the todo list (e.g. 'Create task Hello world')"
           disabled={loading}
         />
         <button onClick={sendPrompt} disabled={loading}>
