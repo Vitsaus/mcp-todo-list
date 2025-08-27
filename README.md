@@ -1,6 +1,6 @@
 # MCP Todo
 
-My first attempt to understand and learn how MCP servers/AI querying works.
+My first attempt to understand and learn how MCP servers/AI querying works. This is not suitable for production, this is very naive implementation which can quickly use your tokens with large amount of tasks.
 
 This workspace contains a simple mcp todo app with:
 
