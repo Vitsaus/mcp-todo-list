@@ -13,7 +13,6 @@ export default function App() {
   const [prompt, setPrompt] = useState('');
   const [loading, setLoading] = useState(false);
   const [aiRaw, setAiRaw] = useState('');
-  const [aiMessage, setAiMessage] = useState('');
 
   useEffect(() => {
     fetchTasks();
@@ -39,9 +38,7 @@ export default function App() {
         console.error('AI raw:', res.data.raw);
       }
 
-      // show AI message (human-facing) and raw text if provided
-      // prefer `assistant` (adapter for VS Code / clients expecting a plain string)
-      setAiMessage(res.data?.message || res.data?.assistant || '');
+      // show raw AI text for inspection
       setAiRaw(res.data?.raw || '');
 
       // If the MCP returned a `listed` array, show only those tasks in the UI.
@@ -77,14 +74,6 @@ export default function App() {
           {loading ? 'Sending...' : 'Send'}
         </button>
       </div>
-
-      {/* AI human-facing message */}
-      {aiMessage ? (
-        <div style={{ marginTop: 12, padding: 12, background: '#eef6ff', borderRadius: 6 }}>
-          <strong>AI message:</strong>
-          <div style={{ whiteSpace: 'pre-wrap', marginTop: 8 }}>{aiMessage}</div>
-        </div>
-      ) : null}
 
       {/* AI raw text for inspection */}
       {aiRaw ? (
