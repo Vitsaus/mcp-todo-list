@@ -32,3 +32,5 @@ In Visual Studio Code chat/ai window you can call:
 #mcp set task 1 as done
 
 and so on...
+
+![App screenshot](screenshot.png)
